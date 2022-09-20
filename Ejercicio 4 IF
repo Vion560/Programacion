@@ -1,0 +1,21 @@
+float precio;
+    float km;
+    Console.WriteLine("ponga numero de km");
+    km =int.Parse(Console.WriteLine());
+    if(km<300)
+    {
+        precio = 100;
+        Console.WriteLine("el precio es: " + precio);
+    }
+    else if(300<km && km<1000)
+    {
+        precio = (100 + (10 * km));
+        Console.WriteLine("el precio es: " + precio);
+    }
+    else
+    {
+        precio = (7100 + (5 * km));
+        Console.WriteLine("el precio es: " + precio);
+    }
+  }
+}
