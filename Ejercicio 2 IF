@@ -1,0 +1,19 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Hello World");
+    float n1;
+    float n2;
+    Console.WriteLine("escriba 2 números");
+    n1 = Convert.ToInt32(Console.ReadLine());
+    n2 = Convert.ToInt32(Console.ReadLine());
+    if(n1>n2)
+    {
+     Console.WriteLine(n1);   
+    }
+    else
+    {
+      Console.WriteLine(n2);  
+    }
+}
+}
