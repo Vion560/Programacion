@@ -1,0 +1,18 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Hello World");
+    float hora;
+    Console.WriteLine("Escriba una hora y se pasa a formato 12h");
+    hora = Convert.ToInt32(Console.ReadLine());
+    if(hora>12)
+    {
+        hora = (hora - 12);
+        Console.WriteLine(hora+"pm");
+    }
+    else
+    {
+        Console.WriteLine(hora+"am");
+    }
+}
+}
