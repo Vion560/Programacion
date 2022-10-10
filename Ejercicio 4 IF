@@ -1,7 +1,7 @@
 float precio;
     float km;
     Console.WriteLine("ponga numero de km");
-    km =int.Parse(Console.WriteLine());
+    km =int.Parse(Console.ReadLine());
     if(km<300)
     {
         precio = 100;
