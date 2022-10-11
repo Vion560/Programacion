@@ -7,8 +7,8 @@ namespace ejbucle2
         static void Main(string[] args)
         {
             int counter;
-            counter = 1;
-            while (counter < 100)
+            counter = 0;
+            while (counter <= 100)
             {
                 Console.WriteLine(counter);
                 counter = counter + 5;
