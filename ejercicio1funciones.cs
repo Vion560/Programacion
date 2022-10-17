@@ -23,6 +23,7 @@ namespace ConsoleApp2
                 if ((a % num) == 0)
                 {
                     multiplicador = multiplicador * a;
+                    Console.WriteLine(multiplicador);
                 }               
             }
             while (a != 0);
