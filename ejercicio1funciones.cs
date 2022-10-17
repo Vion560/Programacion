@@ -20,14 +20,14 @@ namespace ConsoleApp2
             do
             {
                 a = int.Parse(Console.ReadLine());
-                if ((a % num) == 0)
+                if (a % num == 0 && a !=0)
                 {
                     multiplicador = multiplicador * a;
                     Console.WriteLine(multiplicador);
                 }               
             }
             while (a != 0);
-            { return a; }
+            { return multiplicador; }
         }                  
     }
 }
