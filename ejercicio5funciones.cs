@@ -22,10 +22,7 @@ namespace ejercicio5funciones
                 {
                     prime = false;
                 }
-                else
-                {
                     counter = counter + 1;
-                };
             }
             while (counter <= num);
         }
