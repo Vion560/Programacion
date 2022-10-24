@@ -29,7 +29,7 @@ namespace ejercicio1
         }
         static int repnum(int a3)
         {
-            for (int num = 1; num < a3; num++)
+            for (int num = 1; num < a3; num=num+1)
             {
                 Console.WriteLine(a3);
             }
