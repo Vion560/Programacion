@@ -1,37 +1,36 @@
 ﻿using System;
 
-namespace ConsoleApp3
+namespace ej3array
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ej2();
+            ej3();
         }
-        static void ej2()
+        static void ej3()
         {
             Random r = new Random();
-                int[] array = new int[15];
-            for(int i=0; i < array.Length; ++i)
+            int[] numRandom = new int[20];
+            for(int i = 0; i < numRandom.Length;i++)
             {
-                array[i] = r.Next(0, 50);
-                Console.WriteLine(array[i]);
+                numRandom[i] = r.Next(0,10);
             }
-            //sacar el valor mas alto
-            int higher = array[0];
-            int lower = array[1];
-            for (int i = 0; i< array.Length;++i)
+            for(int i = 0; i < numRandom.Length;i++)
             {
-                if(array[i] > higher)
-                {
-                    higher = array[i];
-                }
-                if (array[i] < lower)
-                {
-                    lower = array[i];
-                }
+                Console.Write(numRandom[i]+ "  ");
             }
-            Console.WriteLine("el mayor es: " + higher + "el menor es: " + lower);
+            int numberLast = numRandom[19];
+            for(int i = 18;i >=0;--i)
+            {
+                numRandom[i + 1] = numRandom[i];
+            }
+            numRandom[0] = numberLast;
+            Console.WriteLine();
+            for (int i = 0; i < numRandom.Length; i++)
+            {
+                Console.Write(numRandom[i]+ "  ");
+            }
         }
     }
 }
