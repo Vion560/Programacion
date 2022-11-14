@@ -1,0 +1,2 @@
+Funcion con 3 parametros de entrada, el 1 es el tamaño del array, el 2 y 3 van a ser el min y max del aleatorio con el k lo rellenemos.
+ordenarlo de menor a mayor.
