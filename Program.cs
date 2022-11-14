@@ -1,39 +1,37 @@
 ﻿using System;
-using System.Security.Cryptography;
 
-namespace ejercicio1
+namespace ConsoleApp3
 {
-    class program
+    class Program
     {
         static void Main(string[] args)
         {
-            exercise1();
+            ej2();
         }
-        static void exercise1()
+        static void ej2()
         {
-            Console.WriteLine("Da un número");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(numtimes(a));
-        }
-        static int numtimes(int a2)
-        {
-            int counter;
-            counter = a2 - 1;
-            do
+            Random r = new Random();
+                int[] array = new int[15];
+            for(int i=0; i < array.Length; ++i)
             {
-                Console.WriteLine(repnum(counter));
-                counter = counter - 1;
+                array[i] = r.Next(0, 50);
+                Console.WriteLine(array[i]);
             }
-            while (counter > 0);
-            return a2;
-        }
-        static int repnum(int a3)
-        {
-            for (int num = 1; num < a3; num=num+1)
+            //sacar el valor mas alto
+            int higher = array[0];
+            int lower = array[1];
+            for (int i = 0; i< array.Length;++i)
             {
-                Console.WriteLine(a3);
+                if(array[i] > higher)
+                {
+                    higher = array[i];
+                }
+                if (array[i] < lower)
+                {
+                    lower = array[i];
+                }
             }
-            return a3;
+            Console.WriteLine("el mayor es: " + higher + "el menor es: " + lower);
         }
     }
 }
