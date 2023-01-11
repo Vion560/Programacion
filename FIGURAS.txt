@@ -1,0 +1,16 @@
+clase figura geometrica atributos area, perimetro privados HACER 2 FIGURAS DE CADA TIPO
+1 unico constructor vacio
+get y set protegidas
+funcion publica mostrar 
+clase triangulo hereda de figura g -con atributos base y altura
+1 constructor que recibe la base y altura y las asigna y las usa para calcular el area y perimetro y lo rellena
+clase cuadrado 1 constructor que recibe el lado y lo muestra
+clase rectangulo  1 constructor que recibe lado grande y pequeño
+clase pentagono 1 constructor que recibe lado y el apotema
+clase hexagono 1 constructor que recibe lado y el apotema
+
+OTRO EJERCICIO
+Operacion tiene 2 atributos de tipo real
+4 clases hijas suma,resta,multiplicacion y division con un calcular en todos ellos
+clase calculadora con un array de operaciones y n metodos privados y una funcion publica resolver operaciones devuelve string.
+1 metodo publico insertar operacion.
