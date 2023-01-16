@@ -1,0 +1,6 @@
+representar un aula con identificador de aula, una materia , una capacidad y una serie de personar(estudiantes o profes) con nombre, edad y genero
+de los estudiantes tmb la calificacion y del profe la materia que imparte(bdd,programacion,entornos)
+los estudiantes tienen n 50% de prob de hacer pellas y el porfesor 20% de estar indispuesto
+queremos un metodo de si acude al aula cualquiera de los 2
+1 aula para k haya clase tiene que haber un profesor,k el profe de la materia de ese aula y acudan el 50% de los alumnos.
+si se da clase se muestra cuantos alumnos y alumnas han acudido y si estan aprobados.
