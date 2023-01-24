@@ -1,0 +1,6 @@
+        string name;
+        int identifier;
+        int powerpoints;
+        double power;
+        int precision;
+        bool priority;
