@@ -1,0 +1,8 @@
+        public string GetName()
+        {
+            return typespecie.GetName();
+        }
+        public int GetActualHp()
+        {
+            return typespecie.GetActualHp();
+        }
