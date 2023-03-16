@@ -1,0 +1,34 @@
+use gimnasios;
+select * from personal;
+select max(salario_base) from personal;
+select min(salario_base) from personal;
+select avg(salario_base) from personal;
+select sum(salario_base) from personal;
+select count(*) from personal;
+select puesto, sum(salario_base) from personal group by(puesto);
+#HAVING ES PARA ESTE TIPO DE FUNCIONES DE ARRIBA
+use empresa;
+#1. Mostrar por cada oficio cuantos empleados tiene, cuál es el mejor salario, la suma total de los salarios y cuantos empleados tienen comisión.
+select count(*),sum(salario),max(salario),count(comision) from empleado group by(oficio);
+#2. Mostrar el codigo y nombre del departamento de los departamentos que cuya suma de salarios supera los 9000€.
+select departamento.dept_no,dnombre from departamento join empleado on  departamento.dept_no=empleado.dept_no group by departamento.dept_no having sum(salario)>9000;
+#3. Mostrar la media del salario de los departamentos que tienen más de 3 empleados sin tener en cuenta ni a los presidentes ni a los directores.
+select dept_no,oficio,salario from empleado order by dept_no; #para ver en cuales hay +3 empleados
+select dept_no,avg(salario) from empleado where oficio not in('PRESIDENTE','DIRECTOR') group by dept_no having count(*) > 3 order by dept_no; #para ver en cuales hay +3 empleados
+
+#4. Mostrar por cada mes y año cuantos empleados han entrado a la empresa
+#5. Mostrar el año en el que han entrado más empleados
+#6. Mostrar el año en el que han entrado más empleados sin contar con los directores. 
+#7. Mostrar la mejor y peor nota en cada una de las asignaturas junto al nombre de la asignatura.
+#8. Mostrar las asignaturas que tienen más de un alumno suspenso.
+#9. Mostrar para cada alumno su nombre junto a la media de sus notas pero solo para alumnos que esta media sea al menos de 6
+#10.Mostrar el código y el nombre de la asignatura en la que se han obtenido más suspensos.
+select n.cod,nombre,nota,count(*) from notas as n inner join asignaturas as a on n.cod=a.cod where nota<5 group by n.cod order by count(*) desc;
+select n.cod,nombre from notas as n inner join asignaturas as a on n.cod=a.cod where nota<5 group by n.cod order by count(*) desc limit 1;
+#11.Mostrar el nombre de los alumnos que han obtenido más de un ocho.
+select * from notas;
+select substring(apenom,locate(',',apenom)+1,length(apenom))as nombre from notas as n inner join alumnos as a on n.dni=a.dni where nota=8 group by n.dni having count(*)>1 order by 1;
+#12. Mostrar por cada alumno cuantos aprobados y cuantos suspensos tiene.
+use instituto;
+select * from notas order by 1;
+select dni,count(*) as aprobados, (select count(*) from notas as n2 where n2.nota<5 and n2.dni=n1.dni group by n2.dni)as suspenso from notas as n1 where nota>4 group by n1.dni order by 1
