@@ -1,0 +1,9 @@
+EXCEPCIONES:
+TRY{}
+catch(excepcion a utilizar y nombre(e))
+{}
+-pueden haber varios catch.
+-si hay un catch generico tiene que ser el ultimo.
+para que capture todas las exceptciones menos la que quieres:
+catch(Exception e) when (e.GetType()!=typeof(FormatException)) y ya en la otra especificas lo que quieres:
+catch(FormatException e){"Esta mal";}
