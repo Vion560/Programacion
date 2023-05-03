@@ -7,3 +7,8 @@ catch(excepcion a utilizar y nombre(e))
 para que capture todas las exceptciones menos la que quieres:
 catch(Exception e) when (e.GetType()!=typeof(FormatException)) y ya en la otra especificas lo que quieres:
 catch(FormatException e){"Esta mal";}
+HERENCIA:
+De más a menos rango:
+class Object
+class NombreClasePadre{}
+class OtraClase:NombreClasePadre{}
