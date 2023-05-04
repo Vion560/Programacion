@@ -12,3 +12,6 @@ De más a menos rango:
 class Object
 class NombreClasePadre{}
 class OtraClase:NombreClasePadre{}
+para constructores k heredan de otros se usa :base()
+Si creas un constructor distinto del constructor vacío da error en las clases hijo y 
+debes crear en cada una un constructor public Hijo():base(){}
