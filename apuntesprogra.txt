@@ -14,4 +14,12 @@ class NombreClasePadre{}
 class OtraClase:NombreClasePadre{}
 para constructores k heredan de otros se usa :base()
 Si creas un constructor distinto del constructor vacío da error en las clases hijo y 
-debes crear en cada una un constructor public Hijo():base(){}
+debes crear en cada una un constructor public Hijo(string Name):base(Name){} y dentro de base() tienes k poner
+un valor del mismo tipo k el de la clase padre.
+Principio de sustitución;
+No se puede hacer Caballo animal = new Mamifero;
+Se puede hacer Mamiferos horse= new Caballo; 
+Tmb se puede hacer Mamiferos animal = new Mamiferos()
+Puedes acceder a los metodos de mamiferos pero no de Caballo
+Puedes guardar en la variable animal k es la padre la hija horse : animal= horse
+
