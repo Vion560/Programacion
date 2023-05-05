@@ -22,4 +22,4 @@ Se puede hacer Mamiferos horse= new Caballo;
 Tmb se puede hacer Mamiferos animal = new Mamiferos()
 Puedes acceder a los metodos de mamiferos pero no de Caballo
 Puedes guardar en la variable animal k es la padre la hija horse : animal= horse
-
+protected es accesible desde la clase k lo creas y las que heredan de ella.
