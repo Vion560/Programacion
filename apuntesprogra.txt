@@ -23,3 +23,8 @@ Tmb se puede hacer Mamiferos animal = new Mamiferos()
 Puedes acceder a los metodos de mamiferos pero no de Caballo
 Puedes guardar en la variable animal k es la padre la hija horse : animal= horse
 protected es accesible desde la clase k lo creas y las que heredan de ella.
+Con new delante del todo escrito en la funcion hija se oculta la funcion de la clase padre
+Con public virtual en una funcion de la clase padre conseguimos que en las clases hijo con un public override en una funcion con el mismo nombre se pueda modificar en esta funcion con lo que quieras.
+Casi siempre se ponen las variable private y metodos en public pero no siempre es así
+private solo es accesible desde su misma clase
+protected es accesible desde su misma clase y las que heredan de esta misma
