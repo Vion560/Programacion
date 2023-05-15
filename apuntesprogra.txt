@@ -28,3 +28,8 @@ Con public virtual en una funcion de la clase padre conseguimos que en las clase
 Casi siempre se ponen las variable private y metodos en public pero no siempre es así
 private solo es accesible desde su misma clase
 protected es accesible desde su misma clase y las que heredan de esta misma
+LISTAS:
+COLAS:
+Te incorporas al final de la cola y avanzas hasta llegar a la cabeza de la cola.
+Se unen desde el inicio al final con punteros que apuntan al siguiente.
+
